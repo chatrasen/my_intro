@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Math Plugin</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../../css/reveal.css">
+		<link rel="stylesheet" href="../../css/theme/league.css" id="theme">
+                
+                <style>
+                    div.logo_position {
+                        position: fixed;
+                        top: 570px;
+                        left: 900px;
+                        right: 0px;
+                        border:0px;
+                        width: 100px;
+                        height: 100px;
+                    }
+                    div.logo_text_position {
+                        position: fixed;
+                        top: 600px;
+                        left: 1000px;
+                        border: 0px;
+                        width:150px;
+                        height:30px;
+                    }
+                    div.icpc{
+                        position: fixed;
+                        top: 0px;
+                        left: 800px;
+                        border: 0px;
+                        width:400px;
+                        height:350px;
+                    }
+                    div.algo{
+                        position: fixed;
+                        top: 0px;
+                        right: 620px;
+                        border: 0px;
+                        width:600px;
+                        height:600px;
+                    }
+                </style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section>                                   
+                                    
+                                    <div class="logo_position">
+                                        <img src = "assets/mercari_logo.jpg" alt="logo" />
+                                    </div>
+                                    <div class="logo_text_position">
+                                        <img src = "assets/mercari.png" alt="logo_text"/>
+                                    </div>
+                                    
+                                    <h2>Anurag Bharadwaj</h2>
+                                    <h4><i> CSE, IIT Kharagpur</i></h4>
+
+				</section>
+
+				<section>
+                                    <section>
+                                        <div class="logo_position">
+                                            <img src = "assets/mercari_logo.jpg" alt="logo"/>
+                                        </div>
+                                        <div class="logo_text_position">
+                                            <img src = "assets/mercari.png" alt="logo_text"/>
+                                        </div>
+                                        <h2> Interests </h2>
+                                        <a href="#/1/1"><p class="fragment" data-fragment-index="1">Algorithms</p></a>
+                                        <a href="#/1/2"><p class="fragment" data-fragment-index="2">Self Driving Cars</p></a>
+                                        <a href="#/1/3"><p class="fragment" data-fragment-index="3">Deep Learning and NLP</p></a>
+                                        <a href="#/1/4"><p class="fragment" data-fragment-index="4">Distributed Systems</p></a>
+
+                                    </section>
+                                    <section>
+                                        <p> Algorithms <p>
+                                        <div class="icpc">
+                                             <img src ='assets/acm_icpc.jpg' alt="icpc_image">
+                                        </div>
+                                         <div class="algo">
+                                             <img src ='assets/algo.gif' alt="icpc_image">
+                                        </div>
+                                        <video width="640" height="480" autoplay >
+                                            <source src="assets/dp.mkv">                                            
+                                         </video>
+                                        
+                                    </section>
+
+                                    <section data-background-video ="assets/agv_sim.mkv" data-background-video-loop data-background-video-muted
+                                             style ="">
+                                        <h4 style="position: fixed; bottom:500px;right:600px; color: black;">Driverless Car <br>Simulation</h4>
+                                    </section>
+                                    
+                                    <section> Deep Learning and NLP </section>
+                                   <section> Distributed Systems </section>
+
+				</section>
+                                
+                            <section>
+                                <div class="logo_position">
+                                            <img src = "assets/mercari_logo.jpg" alt="logo"/>
+                                </div>
+                                <div class="logo_text_position">
+                                    <img src = "assets/mercari.png" alt="logo_text"/>
+                                </div>
+                                <h2>Ideas</h2>
+                                <ul style="list-style-type:circle">
+                                    <li>Autonomous Delivery System</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <section>
+                                     <div class="logo_position">
+                                            <img src = "assets/mercari_logo.jpg" alt="logo"/>
+                                    </div>
+                                    <div class="logo_text_position">
+                                        <img src = "assets/mercari.png" alt="logo_text"/>
+                                    </div>
+                                    <h4> Autonomous Delivery System </h4>
+                                    <img src ='assets/auto_del.png' alt="autonomous_delivery" />
+                                </section>
+                                <section>
+                                    <p> Tokyo Metro Navigation <p>
+                                    <iframe width="1400" height="550"
+                                        src="https://www.tokyometro.jp/en/ticket/search/index.php">
+                                    </iframe>
+                                    <!--<h2>Metro booking service</h2>-->
+                                </section>
+                                <section>
+                                    
+                                </section>
+                            </section>
+			</div>
+
+		</div>
+
+		<script src="../../lib/js/head.min.js"></script>
+		<script src="../../js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+
+				math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
+				dependencies: [
+					{ src: '../../lib/js/classList.js' },
+					{ src: '../../plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
