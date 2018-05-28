@@ -1,49 +1,396 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 	<head>
 		<meta charset="utf-8">
+
+		<title>reveal.js - Math Plugin</title>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
-
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
-
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+                
+                <style>
+                    div.logo_position {
+                        position: fixed;
+                        top: 570px;
+                        left: 850px;
+                        right: 0px;
+                        border:0px;
+                        width: 100px;
+                        height: 100px;
+                    }
+                    div.logo_text_position {
+                        position: fixed;
+                        top: 600px;
+                        left: 950px;
+                        border: 0px;
+                        width:150px;
+                        height:30px;
+                    }
+                    div.iit_kgp_logo {
+                        position: fixed;
+                        top: 0px;
+                        right: 850px;
+                        width:300px;
+                        height:200px;
+                        
+                    }
+                    div.agv_logo {
+                        position: fixed;
+                        top: 0px;
+                        right: -170px;
+                        width:300px;
+                        height:200px;
+                        
+                    }
+                    div.uiuc_logo {
+                        position: fixed;
+                        top: 575px;
+                        right: 800px;
+                        width:300px;
+                        height:200px;
+                        
+                    }
+                    div.icpc{
+                        position: fixed;
+                        top: 0px;
+                        left: 750px;
+                        border: 0px;
+                        width:350px;
+                        height:300px;
+                    }
+                    div.algo{
+                        position: fixed;
+                        top: 25px;
+                        right: 670px;
+                        border: 0px;
+                        width:600px;
+                        height:600px;
+                    }
+                    div.cpp{
+                        position: fixed;
+                        top: 100px;
+                        right: -50px;
+                        border: 0px;
+                        width:200px;
+                        height:200px;
+                    }
+                    div.python{
+                        position: fixed;
+                        top: 50px;
+                        right: 550px;
+                        border: 0px;
+                        width:200px;
+                        height:200px;
+                    }
+                    div.java{
+                        position: fixed;
+                        top: 100px;
+                        right: 800px;
+                        border: 0px;
+                        width:200px;
+                        height:200px;
+                    }
+                    div.ros{
+                        position: fixed;
+                        top: 450px;
+                        right: 800px;
+                        border: 0px;
+                        width:200px;
+                        height:200px;
+                    }
+                    div.tensorflow{
+                        position: fixed;
+                        top: 500px;
+                        right: 550px;
+                        border: 0px;
+                        width:200px;
+                        height:200px;
+                    }
+                    div.opencv{
+                        position: fixed;
+                        top: 450px;
+                        right: -50px;
+                        border: 0px;
+                        width:200px;
+                        height:200px;
+                    }
+                    div.hadoop{
+                        position: fixed;
+                        top: 500px;
+                        right: 220px;
+                        border: 0px;
+                        width:250px;
+                        height:250px;
+                    }
+                    div.ai{
+                        position: fixed;
+                        top: 0px;
+                        right: 270px;
+                        border: 0px;
+                        width:170px;
+                        height:170px;
+                    }
+                    div.tokyo_metro{
+                        position: fixed;
+                        top: 100px;
+                        right: 40px;
+                        border: 0px;
+                        width: 900px;
+                        height: 900px;
+                    }
+                    div.printer{
+                        position: fixed;
+                        top: 0px;
+                        right: 620px;
+                        border: 0px;
+                        width:400px;
+                        height:400px;
+                    }
+                    div.spectro{
+                        position: fixed;
+                        top: 330px;
+                        right: 520px;
+                        border: 0px;
+                        width: 600px;
+                        height: 600px;
+                    }
+                    div.lstm{
+                        position: fixed;
+                        top: 200px;
+                        right: -150px;
+                        border: 0px;
+                        width: 700px;
+                        height: 900px;
+                    }
+                    .shape{
+                        text-align:center;
+                        background-color:rgba(3,78,136,0.7);
+                        width:500px;
+                        height:60px;
+                        line-height:60px;
+                        color:white;
+                        margin:50px;
+                        left: 25%;
+                        position:relative;
+                    }
+                    
+                    .shape:before{
+                        content:"";
+                        width:0px;
+                        height:0px;
+                        border-top:60px solid rgba(3,78,136,0.7);
+                        border-left:60px solid transparent;
+                        position:absolute;
+                        right:100%;
+                        top:0px;
+                    }
+                </style>
 	</head>
+
 	<body>
+
 		<div class="reveal">
+
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+				<section>                                   
+                                    
+                                    <div class="logo_position">
+                                        <img src = "assets/mercari_logo.jpg" alt="logo" />
+                                    </div>
+                                    <div class="logo_text_position">
+                                        <img src = "assets/mercari.png" alt="logo_text"/>
+                                    </div>
+                                    
+                                    <div class="iit_kgp_logo">
+                                        <img src ="assets/IITKGPLogo.png" alt="IIT_KGP"/>
+                                    </div>
+                                    
+                                    <div class="agv_logo">
+                                        <img src ="assets/agv_logo.jpg" alt="IIT_KGP"/>
+                                    </div>
+                                    
+                                    <div class="uiuc_logo">
+                                        <img src ="assets/uiuc_logo.jpg" alt="IIT_KGP"/>
+                                    </div>
+                                    
+                                    <h2>Anurag Bharadwaj</h2>
+                                    <h4><i> - CSE, IIT Kharagpur</i></h4>
+
+				</section>
+
+				<section>
+                                    <section>
+<!--                                        <div class="logo_position">
+                                            <img src = "assets/mercari_logo.jpg" alt="logo"/>
+                                        </div>
+                                        <div class="logo_text_position">
+                                            <img src = "assets/mercari.png" alt="logo_text"/>
+                                        </div>-->
+                                        <h2> Interests </h2>
+                                        
+                                        <a href="#/1/1"><p class="fragment shape" data-fragment-index="1">Algorithms</p></a>                                        
+                                        <a href="#/1/2"><p class="fragment shape" data-fragment-index="2">Self Driving Cars</p></a>
+                                        <a href="#/1/3"><p class="fragment shape" data-fragment-index="3"> Cryptography </p></a>
+                                        <a href="#/1/4"><p class="fragment shape" data-fragment-index="4">Deep Learning and NLP</p></a>
+
+                                    </section>
+                                    <section>
+                                        <h2 style="margin-left: -100px; margin-top: 100px;"> Algorithms </h2>
+                                        <div class="icpc">
+                                             <img src ='assets/acm_icpc.jpg' alt="icpc_image">
+                                        </div>
+                                         <div class="algo">
+                                             <img src ='assets/algo.gif' alt="icpc_image">
+                                        </div>
+                                        <video style="margin-left: -100px;margin-top: 0px" width="640" height="480" autoplay loop="loop" muted="muted">
+                                            <source src="assets/dp.mkv">                                            
+                                         </video>
+                                        
+                                    </section>
+
+                                    <section data-background-video ="assets/agv_sim.mkv" data-background-video-loop data-background-video-muted
+                                             style ="">
+                                        <h4 style="position: fixed; bottom:500px;right:600px; color: black;">Driverless Car <br>Simulation</h4>
+                                    </section>
+                                    
+                                    <section>
+                                        <div class="spectro">
+                                             <img src ='assets/spectrogram.png' alt="spectrogram">
+                                        </div>
+                                        <div class="printer">
+                                             <img src ='assets/3d_printer.png' alt="3d_printer">
+                                        </div>
+                                        <h4 style="margin-left: 450px; margin-top: -75px; position: fixed;">Attack on 3D-printer</h4>
+                                        <ul style="margin-top: 0px; margin-left: 470px;font-size: 35px;
+                                            font-family: 'serif'; color: #fa9600; list-style-type: square;">
+                                            <li style="margin-bottom: 30px; width:600px"> Identify the shape of the printed object  </li>
+                                            <li style="margin-bottom: 30px;"> Magnetometer based attack </li>
+                                            <li style="margin-bottom: 30px;"> Both side and rear motors used </li>
+                                            <li style="margin-bottom: 30px;"> Computer Vision based approach </li>
+                                            <li style="margin-bottom: 30px;"> Defence using random-string approach</li>
+                                        </ul>
+                                    </section>
+                                   <section> 
+                                       <div class="lstm">
+                                             <img src ='assets/lstm.png' alt="lstm">
+                                        </div>
+                                       <h4 style="margin-left: 300px; margin-top: 0px; position: fixed;">Opinion vs Fact</h4>
+                                        <ul style="margin-top: 100px; margin-left: -650px;font-size: 35px;
+                                            font-family: 'serif'; color: #fa9600; list-style-type: square;">
+                                            <li style="margin-bottom: 30px; width: 500px;"> Increase involvement of users  </li>
+                                            <li style="margin-bottom: 30px; width: 500px;"> Strong/weak polar words, presence of pronouns, opinionated words like 'should' </li>
+                                            <li style="margin-bottom: 30px; width: 500px;"> LSTM with GloVe gave best accuracy </li>
+                                            <li style="margin-bottom: 30px; width: 500px;"> Opinion fractions in various categories </li>
+                                        </ul>
+                                   </section>
+
+				</section>
+                                
+                            <section>
+<!--                                <div class="logo_position">
+                                            <img src = "assets/mercari_logo.jpg" alt="logo"/>
+                                </div>
+                                <div class="logo_text_position">
+                                    <img src = "assets/mercari.png" alt="logo_text"/>
+                                </div>-->
+                                <h1>Skills</h1>
+                                <div class="cpp">
+                                    <img src ='assets/CPP.jpg' alt="icpc_image">
+                                </div>
+                                <div class="python">
+                                    <img src ='assets/python.png' alt="icpc_image">
+                                </div>
+                                <div class="java">
+                                    <img src ='assets/java.jpg' alt="icpc_image">
+                                </div>
+                                <div class="ros">
+                                    <img src ='assets/ROS.jpg' alt="icpc_image">
+                                </div>
+                                <div class="tensorflow">
+                                    <img src ='assets/tensorflow.png' alt="icpc_image">
+                                </div>
+                                <div class="opencv">
+                                    <img src ='assets/openCV.jpg' alt="icpc_image">
+                                </div>
+                                <div class="hadoop">
+                                    <img src ='assets/hadoop.jpg' alt="icpc_image">
+                                </div>
+                                <div class="ai">
+                                    <img src ='assets/ai.png' alt="icpc_image">
+                                </div>
+                            </section>
+                            <section>
+                                <section>
+<!--                                     <div class="logo_position">
+                                            <img src = "assets/mercari_logo.jpg" alt="logo"/>
+                                    </div>
+                                    <div class="logo_text_position">
+                                        <img src = "assets/mercari.png" alt="logo_text"/>
+                                    </div>-->
+                                    <h4 style="margin-bottom: 600px; "> Autonomous Delivery System </h4>
+                                    <div class="tokyo_metro">
+                                        <img src ='assets/tokyo_metro.png' alt="autonomous_delivery" />
+                                    </div>
+                                   
+                                </section>
+                                <section>
+                                    <p> Tokyo Metro Navigation <p>
+                                    <iframe width="1400" height="550"
+                                        src="https://www.tokyometro.jp/en/ticket/search/index.php">
+                                    </iframe>
+                                    <!--<h2>Metro booking service</h2>-->
+                                </section>
+                                <section>
+                                    <video width="540" height="360" autoplay loop="loop" muted="muted" style="margin-right: 1500px;
+                                          margin-left: -160px">
+                                            <source src="assets/parcel_robot.mkv">                                            
+                                     </video>
+                                    <h4 style="margin-left: 400px; margin-top: -420px; position: fixed;">Important factors</h4>
+                                    <ul style="margin-top: -350px; margin-left: 450px;font-size: 35px;
+                                        font-family: 'serif'; color: #fa9600; list-style-type: square;">
+                                        <li style="margin-bottom: 20px;"> Identify the target platform  </li>
+                                        <li style="margin-bottom: 20px;"> Obstacle avoidance </li>
+                                        <li style="margin-bottom: 20px;"> Entering the train after reaching the platform </li>
+                                        <li style="margin-bottom: 20px;"> GPS to continuously track the location </li>
+                                        <li style="margin-bottom: 20px;"> Controlled environment: easier to design and test</li>
+                                        <li style="margin-bottom: 20px;"> Safety of the package </li>
+                                    </ul>
+                                </section>
+                            </section>
+                            
+                            <section>
+                                <p style="color: orange; font-size: 100px;">Looking forward to an awesome summer!!</p>
+                            </section>
 			</div>
+
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
+
 			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+
+				math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'lib/js/classList.js' },
+					{ src: 'plugin/math/math.js', async: true }
 				]
 			});
+
 		</script>
+
 	</body>
 </html>
+
